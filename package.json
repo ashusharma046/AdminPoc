@@ -22,7 +22,7 @@
   "license": "MIT",
   "homepage": "https://github.com/knledg/react-webpack-skeleton#readme",
   "dependencies": {
-    "axios": "^0.9.1",
+    "axios": "^0.19.2",
     "classnames": "^2.2.5",
     "lodash": "^4.7.0",
     "moment": "^2.12.0",
