@@ -38,6 +38,6 @@ app.listen(process.env.WEBPACK_PORT || '8051', 'localhost', function(err) {
     return;
   }
 
-  console.log('Listening at http://localhost:' + process.env.WEBPACK_PORT || '8051');
+  console.log('Listening at http://localhost:8051' + process.env.WEBPACK_PORT || '8051');
 });
 /* eslint-enable no-console */
