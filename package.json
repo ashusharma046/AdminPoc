@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
+    "build": "npm run build:webpack",
     "dev": "node dev-server.js",
     "lint": "node_modules/.bin/eslint --ext .js .",
     "test": "NODE_ENV=test NODE_PATH=. ./node_modules/.bin/mocha test/setup.js test --recursive",
