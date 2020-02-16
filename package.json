@@ -4,10 +4,10 @@
   "description": "React Webpack Skeleton",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npm run build:webpack",
+    "dev": "node dev-server.js",
+    "webdriver:update": "./node_modules/.bin/webdriver-manager update",
+    "webdriver:start": "./node_modules/.bin/webdriver-manager start"
   },
   "repository": {
     "type": "git",
