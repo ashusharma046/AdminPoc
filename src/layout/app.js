@@ -23,19 +23,19 @@ class AppLayout extends React.Component {
   }
 
   componentWillMount() {
-    if (process.env.AUTH0_PUB_KEY) {
-      this.lock = new Auth0Lock(process.env.AUTH0_PUB_KEY, process.env.AUTH0_DOMAIN);
-      this.setState({idToken: this.getIdToken()}); // Must come after this.lock init
-    }
+    // if (process.env.AUTH0_PUB_KEY) {
+    //   this.lock = new Auth0Lock(process.env.AUTH0_PUB_KEY, process.env.AUTH0_DOMAIN);
+    //   this.setState({idToken: this.getIdToken()}); // Must come after this.lock init
+    // }
 
-    eventBus.on('logout', () => this.onLogout());
+    // eventBus.on('logout', () => this.onLogout());
   }
 
   componentDidMount() {
-    if (! this.state.idToken && process.env.AUTH0_PUB_KEY) {
-      return this.redirectToLogin();
-    }
-    return this.setUser();
+    // if (! this.state.idToken && process.env.AUTH0_PUB_KEY) {
+    //   return this.redirectToLogin();
+    // }
+    // return this.setUser();
   }
 
   onLogout() {
